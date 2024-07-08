@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>라디오 서블릿</title>
+	</head>
+	<body>
+		<h1>선택 정보를 입력해주세요</h1>
+		<form action="/RadioServlet" method="get">
+			성별 : 
+			남자 <input type = "radio" name="gender" value="M">
+			여자 <input type ="radio" name="gender" value="F"> <br>
+			메일정보 수신 여부 :
+			수신 <input type = "radio" name="mail-check" value="yes">
+			거부 <input type ="radio" name="mail-check" value="no"> <br>
+			<!-- value의 값이 넘어가므로 결과값은 F, yes 이렇게 나온다. -->
+			<input type ="submit" value="전송">
+		</form>
+	</body>
+</html>
